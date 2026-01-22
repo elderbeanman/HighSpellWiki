@@ -1,0 +1,412 @@
+<!doctype html>
+<html lang="en">
+  
+<!-- Mirrored from highspell.wiki/w/File:Oak_scroll.png by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Jan 2026 09:31:43 GMT -->
+<!-- Added by HTTrack --><meta http-equiv="content-type" content="text/html;charset=UTF-8" /><!-- /Added by HTTrack -->
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Zahzr 🤖 Snarflaxus 🤡</title>
+    <style>
+      :root {
+        --bg: #15181c;
+        --panel: #22272d;
+        --panel-2: #1c2126;
+        --border: #313840;
+        --text: #e7edf3;
+        --muted: #aab6c2;
+
+        /* Highspell-ish green accent */
+        --accent: #00d26a;
+        --accent-2: #00b85d;
+
+        --radius: 16px;
+        --shadow: 0 18px 50px rgba(0, 0, 0, 0.45);
+        --maxw: 920px;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+      html,
+      body {
+        height: 100%;
+      }
+      body {
+        margin: 0;
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          Helvetica,
+          Arial,
+          "Apple Color Emoji",
+          "Segoe UI Emoji";
+        color: var(--text);
+        background: radial-gradient(900px 500px at 70% -10%, rgba(0, 210, 106, 0.18), transparent 60%), radial-gradient(700px 400px at 20% 10%, rgba(0, 184, 93, 0.1), transparent 55%), linear-gradient(180deg, #111418 0%, var(--bg) 45%, #101216 100%);
+      }
+
+      main {
+        max-width: var(--maxw);
+        margin: 0 auto;
+        padding: clamp(18px, 3vw, 36px);
+      }
+
+      /* Simple stack of posts */
+      .post {
+        position: relative;
+        margin: 0 0 18px 0;
+        background: linear-gradient(180deg, var(--panel) 0%, var(--panel-2) 100%);
+        border: 1px solid var(--border);
+        border-radius: var(--radius);
+        box-shadow: var(--shadow);
+        overflow: hidden;
+      }
+
+      /* subtle green edge like the site buttons */
+      .post::before {
+        content: "";
+        position: absolute;
+        inset: 0 auto 0 0;
+        width: 6px;
+        background: linear-gradient(180deg, var(--accent) 0%, var(--accent-2) 100%);
+        opacity: 0.95;
+      }
+
+      .post-inner {
+        padding: clamp(16px, 2.4vw, 26px);
+        padding-left: clamp(16px, 2.4vw, 26px);
+        margin-left: 6px; /* space after accent bar */
+      }
+
+      .post-title {
+        margin: 0 0 6px 0;
+        font-size: clamp(20px, 2.2vw, 28px);
+        line-height: 1.15;
+        letter-spacing: 0.2px;
+      }
+
+      .post-meta {
+        margin: 0 0 14px 0;
+        color: var(--muted);
+        font-size: 13px;
+      }
+
+      /* Blog content base styling (keeps pasted HTML readable) */
+      .post-content {
+        color: var(--text);
+        line-height: 1.65;
+        font-size: 16px;
+      }
+
+      .post-content :is(h1, h2, h3) {
+        margin: 18px 0 10px;
+        line-height: 1.2;
+      }
+      .post-content h1 {
+        font-size: 1.55em;
+      }
+      .post-content h2 {
+        font-size: 1.3em;
+      }
+      .post-content h3 {
+        font-size: 1.1em;
+      }
+
+      .post-content p {
+        margin: 10px 0;
+        color: var(--text);
+      }
+      .post-content a {
+        color: var(--accent);
+        text-decoration: none;
+        border-bottom: 1px solid rgba(0, 210, 106, 0.35);
+      }
+      .post-content a:hover {
+        border-bottom-color: rgba(0, 210, 106, 0.8);
+      }
+
+      .post-content hr {
+        border: none;
+        border-top: 1px solid var(--border);
+        margin: 18px 0;
+        opacity: 0.9;
+      }
+
+      .post-content blockquote {
+        margin: 14px 0;
+        padding: 10px 12px;
+        background: rgba(0, 0, 0, 0.18);
+        border: 1px solid var(--border);
+        border-left: 4px solid rgba(0, 210, 106, 0.75);
+        border-radius: 12px;
+        color: var(--muted);
+      }
+
+      .post-content :is(ul, ol) {
+        padding-left: 20px;
+        margin: 10px 0;
+      }
+
+      .post-content code {
+        font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+        font-size: 0.95em;
+        padding: 0.15em 0.35em;
+        border-radius: 8px;
+        background: rgba(0, 0, 0, 0.25);
+        border: 1px solid rgba(255, 255, 255, 0.06);
+      }
+      .post-content pre {
+        padding: 14px;
+        border-radius: 14px;
+        overflow: auto;
+        background: rgba(0, 0, 0, 0.3);
+        border: 1px solid var(--border);
+      }
+      .post-content pre code {
+        padding: 0;
+        border: 0;
+        background: transparent;
+      }
+
+      .post-content img {
+        max-width: 100%;
+        height: auto;
+        display: block;
+        margin: 14px 0;
+        border-radius: 14px;
+        border: 1px solid rgba(255, 255, 255, 0.08);
+      }
+
+      .post-content table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 14px 0;
+        overflow: hidden;
+        border-radius: 12px;
+        border: 1px solid var(--border);
+      }
+      .post-content th,
+      .post-content td {
+        padding: 10px 10px;
+        border-bottom: 1px solid var(--border);
+        text-align: left;
+        vertical-align: top;
+      }
+      .post-content th {
+        color: var(--muted);
+        font-weight: 600;
+        background: rgba(0, 0, 0, 0.18);
+      }
+
+      /* Optional: reduce huge content width on big monitors */
+      @media (min-width: 1100px) {
+        main {
+          padding-top: 44px;
+          padding-bottom: 44px;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <main>
+      <p>To preface things. Snarflaxus has recently decided to go into investigator mode in HighSpell and uncovered our dirty little secret. Zah, Tomb, Jared, Elvendaele, and I were once a botting group; with a dash of trolling mixed in. That is factual. No one involved is more innocent than anyone else. We all knew the risks. We all enjoyed what we were doing. And we all need to accept our share of responsibility. That includes you, Zahzr.</p>
+      <p>Below are our individual accounts. Each one differs slightly, but together they paint the full picture. We understand that you have little reason to trust us right now. Still, I believe you will. Significant changes need to be made, particularly within the Discord. Take this as a warning and as advice for the future of the game.</p>
+      <p>As for Snarf, he needs to go. I sincerely hope the community can remove him and other bad actors, especially from leadership positions. By the time you finish reading everything, you should be able to reach a clear and well-founded decision on your own.</p>
+      <p>I would also like to clarify that no one from HighLite or RyeLite was involved in, or had any knowledge of, any of the following events. None of us were infiltrated into either project, nor did we intend to be. We appreciate the work that was done, particularly by Kona, and we apologize to him and to anyone else who invested time and effort. — <b>To be absolutely clear, no associated developers were involved in any way, shape, or form, and the client remains safe and fine to use.</b></p>
+      <p>Thank you,<br />- Ryan</p>
+      <br /><br />
+      <article class="post">
+        <div class="post-inner">
+          <h2 class="post-title">Ryan's Story</h2>
+          <div class="post-content">
+            <div>Hello HighSpell!</div>
+            <br />
+            <div>Since you all want sides and stories, here we go.</div>
+            <br />
+            <div>This all started back around November. Thanks to some of Elvendaele's scripts that he posted in the main HighSpell Discord, I got a little curious about how easy it is to mess around with stuff inside HighLite. Nothing major at first. Just a simple bot to keep me logged in during combat (re-equip gloves every 14.5 minutes). It slowly evolved into a flax picking + spinning script, some similar smaller ones. The topic of bots came up between Tomb and I randomly one day, where I admitted to botting. He was semi-interested, so I shared a script or two of mine with him to try out. We chatted about bots for a couple days.</div>
+            <br />
+            <div>That’s when we found out Zah bots. Tomb was actually the one who told me Zah botted. So I “confronted” him (<a href="embed/drama/ryan/A273BaN.png" target="_blank" rel="noopener">sup mr clanker</a>), and that’s when he invited me and Tomb into the botting section of his "Coder Central" Discord server. I can’t remember if Jared was already in there or not, but he was basically there from the beginning as far as I can remember. A couple weeks went on and we decided it would be best to have a seperate Discord entirely, that way we wouldn't accidentally say something in a wrong channel in Zah's social Discord. That's when Zah created the botter Discord.</div>
+            <br />
+            <div>So yes, it was mostly the four of us for a couple months. Me (Ryan), Tomb, Jared, and Zah. Elvendaele here and there.</div>
+            <br />
+            <div>Elvendaele mostly made his own scripts from what I could tell. Or maybe him and Zah just shared, I dont know. He had some bot accounts, and botted on his new main account (Elvendaele2). He was responsible for the "Heyder bots" that swarmed Spidamanda's party and in Middlefern a few times. He even had some pickup bots running during Heyder’s December party with me, snatching up Santas. Elvendaele was also the one who created the "Mod Watch" bot for Zah's Discord, not me. It was basically all of our idea, Zah was the brains (as usual, always gotta be center of attention) and Elvendaele coded it. Elvendaele kind of disappeared from it all once Keatram became a thing for him though.</div>
+            <br />
+            <div>Zah would consistently talk about bots, post updated scripts, and conspire about how to “take over the Rage market” <a href="embed/drama/ryan/R4dsc23.png" target="_blank" rel="noopener">with his 4857398457 Enchanting bots</a>. Oh, you know, the ones you (the community) had to coordinate against by sending PK’ers to the Rage altar to shut it down for a week or two? To the point where he gave up because he couldn’t figure out how to get around it.</div>
+            <br />
+            <div>Zah ran (and still runs) his whole bot farm. The image you saw on Discord from Heyder is 100% real. Those are all his accounts. Believe Tomb, Jared, and I, or don’t. It doesn’t matter. But next time you see them in-game, tell them a friendly “Hi Zah!” Or not, he might not log into them ever again after all of this, hahaha.</div>
+            <br />
+            <div>Funny how he sells the same botted goods on his account nowadays (Zahz). String, logs, scrolls, ores, etc. WEIRD huh...? He bots on his main, his alts that everybody knows, his hidden alts, and all his bot farm bots. Don’t let him fool you.</div>
+            <br />
+            <div>As far as I know, Tomb botted on his main a bit, and a couple smaller bots (like Bronze Axe Only, which only chopped wood with a bronze axe, for fun). He was mostly around for company and to help us out with stuff. Oh, and he <a href="https://www.youtube.com/shorts/rH_hvOTuCFg" target="_blank" rel="noopener">provided Zah access</a> to <a href="https://www.youtube.com/shorts/IgotuPJPY6Q" target="_blank" rel="noopener">his Claude AI account</a> (which is still connected to Zah's Github, access to all his private repos, LOL), which is what Zah used to create most of his bots and everything else. Tomb fizzled away over to Kaetram and hasn’t bothered with HighSpell since.</div>
+            <br />
+            <div>Jared, I can honestly say I didn’t know a whole lot about what he was doing. But from my impressions, he had a few accounts he botted on. He didn’t have some massive farm or anything. A couple alts, and like 5 or so bot accounts (that I know of). Him and I are on completely different time schedules, so we didn't really chat a whole lot. Jared let Zah use his Claude AI account as well, feeling pressured by Zah (that he'd report Jared if he didn't comply). Jared caved in and paid for a monthly subscription for Claude AI purely for Zah to use. Bro was cooking up so many bots and running out of credits that he still wasn't even able to keep up with both Tomb and Jared's accounts, plus the free promotional credits he got on his personal account. COOKIN' 🔥🍳</div>
+            <br />
+            <div>Me? Fuck it. Know the full truth. I want you all to know I’m telling the truth, and I’m not trying to paint myself or anybody else better than they are. No holds barred. Yes, I'm Trade. I ran a lot of bots, <a href="embed/drama/ryan/adkYJcL.png" target="_blank" rel="noopener">probably 50 or so</a>. (Any "bot" bots beyond these, are not me. Except a very few specialty accounts such as <a href="https://www.reddit.com/r/HighSpell/comments/1p5kchc/this_is_the_ideal_male_body_you_may_not_like_it/" target="_blank" rel="noopener">Hitpoints</a> and Crafting.) I also botted on my main to rank #10 overall, and a couple 'alts'. I botted Heyder's party along with Elvendaele (probably Zah too, he was on for it, but I didn't pay attention to others really). I ran dozens of bots for all kinds of resources. I hoarded most of it, sold a bit here and there (Trade). Hardly anybody bought from me, and you all know that already. A few of you did though. Most of what I botted, I kept (my bank would prove that). Besides duplicates that I got from combat drops / T3s and didn't need anymore, a lot of that sold. My main goal was just to stockpile a bunch of money and resources for myself. I'm like a dragon, I want my hoard of gold.</div>
+            <br />
+            <div><small>Side note @ Smokey: I did not intend to necessarily "target you" in any way, with the 3 woodcutting bots using your name. I saw your name in chat one day when you were newer(?), never seeing you before, and went, "that works" while I just so happened to be creating new bot accounts. I have nothing against you (never interacted with you) and never meant to try to make it seem like you yourself are a botter. Sorry about that.</small></div>
+            <br />
+            <div>Pretty much every bot script I used was made by me. I didn’t really use Zah’s stuff, except for his combat script, <a href="embed/drama/ryan/XQh107U.png" target="_blank" rel="noopener">which was pretty fucking nice honestly</a>. I might drop it here sometime in the future. It’ll kill anything you want, auto-eat, auto-pickup, teleport / walk to safespot when out of food, etc.. Works with melee, mage, range. It’s pretty sick. Nice job Zah! His other bots were clunky though, so I didn't use them. The same type of clunky that mine were. They work if you know how to use them since they all have their bugs in ways. Easier for me to make a new mining bot myself in 40 seconds than to spend 5 minutes figuring out which location his "iron ore bot" script was for, ya know? He had a LOT of fucking bots though. For everything, in every location basically. His bots were hooked right up to game files to always be updated, etc. Mine were more-so the "send these exact packets in these timings" type bots ("lazy-er"). Not that it matters either way, bots are bots. But for him to say his shit didn't work is a flat out lie. They did, they do, still running.</div>
+            <br />
+            <div>I started the <a href="embed/drama/ryan/4PeaafV.png" target="_blank" rel="noopener">HighSpell Bot client</a> that is spoke about. It was a learning project that I started, with the intent to sell scripts to people publicly from a website. I showed it off to Tomb as I went along, and then we got to talking about how much easier it would be to just fork HighLite and convert it to what we need. I agreed and Tomb began work on setting things up for me. He wasn't ever going to be a part of it really, he was just helping me get setup with a good base, since I wasn't familiar with HighLite's code (he pulled the the core into the client, for those of you who know what that means). But, <a href="embed/drama/ryan/9dyTQEr.png" target="_blank" rel="noopener">by the time he was done</a>, I was already over the idea and never really touched it. So that didn't become a thing. I now redirect the website to what it is now, a nifty little site I stumbled upon. Props to whoever made it. Zah told me he knows who made it (but wouldn't tell me their name). If you're interested in botting, check the site out, it does a top-notch job explaining it's exploits.</div>
+            <div></div>
+            <div>(Just for clarification, I own the domain / .com, but the content of the site is someone else): <a href="https://highspellbot.com/" target="_blank" rel="noopener">https://HighSpellBot.com</a></div>
+            <div></div>
+            <div>By the way, Heyder. I'm glad you enjoyed my little botting logo, here is the <a href="embed/drama/ryan/4xheJiC.png" target="_blank" rel="noopener">full-res version</a> of it to use (so you don't have to use that pixelated version). Enjoy. 😉</div>
+            <br />
+            <div>We were all having fun for a while, until Zah apparently started shit-talking Tomb in the admin channel(s) on Discord. I don’t know much about it, but it sounded like he was saying stuff for no reason, unprovoked. Trying to get “buddy buddy” with Bunnygirl, I think. That was around when he was doing the “anti-bot” stuff with her.</div>
+            <br />
+            <div>Jared didn’t take kindly to it, since we were all friends, right? So Jared leaked the admin channel messages to Tomb. In Tomb’s exact words: “Jared leaked the admin channel messages to me and I got frustrated with the way it was handled and started to devise a plan to out Zah out of frustration.”</div>
+            <br />
+            <div>That’s when Tomb faked being hacked, recorded all the evidence of Zah cheating, nuked as much of the botter Discord as he could, and then submitted that evidence to Bunnygirl. Zah kicked all the rest of us from the botting Discord once he found out. I haven’t really spoken to him much since. Other than when <a href="embed/drama/ryan/zMhvejq.png" target="_blank" rel="noopener">he thanked me for not telling Snarf the truth</a> about him botting, and then a couple days later <a href="embed/drama/ryan/xhYU8FQ.png" target="_blank" rel="noopener">he gave me that mining script</a> of his (<a href="https://pastebin.com/FsqF3VFZ" target="_blank">which fully works btw</a>, despite what he tells people) (which, looking at Jared's evidence below, he has been continuing to work on (v5.1 -> v5.3)).</div>
+            <br />
+            <div>This leads us to a few days ago. Jared just happens to come back to the game. 100% coincidence, horrible timing. Dude legit just wants to play HighSpell a bit. Then Heyder drops the Zah evidence in Discord for all to see literally a couple hours later. Snarf immediately deflects / defends and starts talking about how Zah was only a minor part, his bots hardly worked, he’s a good guy now and doesn't bot, blah blah blah. (Yet, like Heyder said, Zah’s bots are literally still running to this day LOL.) That’s probably where Zah starts getting heat from Snarf again, bad. Even Snarf is seeing his lies now.</div>
+            <br />
+            <div>So what does he do? Throws Jared, Tomb, and I under the bus even harder. Now he’s saying we did shit we had nothing to do with.</div>
+            <br />
+            <div>Doxing Bunny? Pretty sure it’s Zah. He literally <a href="embed/drama/ryan/K7l7FLz.png" target="_blank" rel="noopener">asked me how to prevent dox'ing</a> a couple days before Bunnygirl was dox'ed. Coincidence? But now they’re trying to throw it on me. Why does Snarf think I did it? Because when Bunnygirl was first made a Pmod, I Googled her username to see who this “newer” person was that Dew made a mod, seemingly at random. Snarf and I were "friends" at that time, and both had the same confusion about Bunnygirl. So I simply told him about her Reddit profile, and that was it.</div>
+            <br />
+            <div>U (GammaParadox) and Zah are working on OpenSpell together. That’s why they’re doing all this damage control, in my opinion. Their plan is to finish OpenSpell and take the playerbase from HighSpell. They can’t do that if Zah looks bad, can they? So they’re using Snarf to deflect for them (whether Snarf knows it to the full extent or not). He knows his story is only as good as he can make it. And anybody who’s read Zah’s responses knows they’re convoluted garbage speak. Hard to follow on purpose so you don't know how to refute it.</div>
+            <br />
+            <div>Onizuka is also working on their own game, Aeturus or something like that. They aren’t trying to clone HighSpell, they’re doing their own thing as far as I can tell. I never really interacted with them, so I can’t say much. But from what I’ve heard through the grapevine, they are / were in Zah’s botting Discord. They’re also currently the head / only HighSpell Discord admin at the moment. So have fun with that..</div>
+            <br />
+            <div>They should probably resign and pass the reins to Heyder for now, honestly. Let him clean everything up and start fresh. Though that’ll come with its own issues. Spidamanda is a good person and should be allowed to stay on the Discord staff, she's trustworthy. Even if her judgement can be iffy at times, she means well. Everybody else on the Discord staff / support needs to go through as far as I'm concerned. I don't know a lot about Pickett, but I have my suspicions that they bot as well. Better safe than sorry, sorry. Get Bunnygirl back in there ASAP and pass her controls.</div>
+            <br />
+            <div>Heyder is crazy and a bit of a weirdo at times, but he genuinely cares about this game. Bunnygirl too. And I’m sad to see her dox’ed and pushed out of the community. I hope once you all get this settled and the Discord taken back over, she’ll come back and she and Heyder can actually figure things out together, make a real plan, and stick to it. (No going solo Mr. Sheriff Detective shit, Heyder....)</div>
+            <br />
+            <div>Dew needs to give Pmods perma-ban abilities. Heyder and Bunny won’t abuse it, I feel. I’d say nobody else really fits to be a Pmod right now. I don’t know any of you at all really, but most of you don’t need that stress, and the rest of you aren’t smart enough to handle the job. Heyder is the perfect level of obsessive crazy, and Bunny is just pure good. If Dew would actually give them the few extra tools they need, they could make HighSpell into what you all want.</div>
+            <br />
+            <div>But this all boils down to Dew’s absence, lack of communication, and refusal to accept help. All of us have spent countless hours trying to make this a better game, only to be ignored by Dew completely. Every one of us has messaged him countless times. No response, ever. He doesn’t care about this game one bit. He makes fun little updates, then fucks off for months at a time. You have to accept that. Nothing will ever change it.</div>
+            <br>
+            <div>Sorry to Dew, you have a decent game, I just wish you cared about it a tad more. It's a shame. The game is rampant with bots; I'm convinced a good 80% of you bot, whether you admit it or not. I've always said that anybody in the top 25 is a botter, except for Heyder probably.</div>
+            <br />
+            <div>Snarf is throwing shit at the wall and seeing what sticks. Why he came back to HighSpell just to stir shit up, who knows. I think he really wants to be Pmod. He acts like he doesn’t, but dude is hungry for power. Foaming at the mouth for that mod position. Most of what he says is bullshit. <u>Always has been.</u></div>
+            <br />
+            <div>Don't dig too deep into Snarf's internet history though, better have some eye bleach if you do. Oh wait, "those aren't him" though! They only date back years and years, way back [machine] before he ever heard of HighSpell (yet his story is that Fallendark and his boys set it up to make him look goofy). And is the only "Snarflaxus" on the internet (made up word that only he uses). And has all the social media handles for it. Tooooatlly not him though.</div>
+            <br />
+            <div>Here's a couple videos of Snarf lying and admiting to lying. First one, the real details start around half way through (but read all of it if you want that juicy HighSpell drama baby!). Zah was confronted by Tomb for the lies in Snarf's recent Discord announcement. The "<a href="https://pastebin.com/Es5fZy4P" target="_blank" rel="noopener">anonymous letter</a>" he attached at the end of the announcement; it was an AI-generated story fabricated by Snarf, based on what Zah told him. (Snarf also intentionally left it anonymous, to make it seem like it is from Zah, that's why it is written in the first-person, even though Zah didn't write it, Snarf did...) Zah asked Snarf to edit it to be more truthful, and Snarf says "<i>Meh, it is more genuine if it's got some errors</i>", and "<i>I wrote from the heart. you can tell</i>", and "<i>It's okay to lie a bit zah</i>".  <a href="https://www.youtube.com/shorts/4WwwP-Kr7HU" target="_blank" rel="noopener">https://www.youtube.com/shorts/4WwwP-Kr7HU</a></div>
+            <br />
+            <div>Here's another video of Snarf admitting to lying. Making Tomb seem like a bigger part than he was, just because he can..? "<i>I'm pretty sure he's in on it.</i>", and "<i>I don't actually give a damn</i>". Read at the end how even Zah is telling Snarf he's being fucked up: <a href="https://www.youtube.com/shorts/tK6UpuwBzzw" target="_blank" rel="noopener">https://www.youtube.com/shorts/tK6UpuwBzzw</a></div>
+            <br />
+            <div>Believe what you want. Or ignore all of this and play HighSpell. I don’t give a shit, and neither does Dew. I'm out of here (yes, all my bots are gone, goodbye). Sorry for the grief we've all caused you. Kick Zah and Snarf the fuck out, don't let them continue to mind-game you all. Also, sorry about the wiki shit. But, Snarf went about this the wrong way, so you can thank him. Two-face bitch "I won't out you, I'm not Heyder" and literally 3 minutes later is in-game saying shit. Get fucked you weirdo. Oh wait, you can't Mr. Snap-"It's Not Me"-Chat. 😉</div>
+            <br />
+            <hr />
+            <br />
+            <div>
+              Whoa, last minute update! Snarf is still trying to do damage control for Zah in the Discord as of a couple hours ago: "<i><a href="embed/drama/ryan/F7qFWcw.png" target="_blank" rel="noopener">btw elven, I don't think you were very involved</a></i
+              >". 🙄 I think Zah is scared that Elvendaele will come forward (wowzers, too bad!), so he tells Snarf that Elven wasnt really involved to get Snarf's heat off him. Since him and Zah were the original two, and he presumably knows the most dirt on Zah. Just my speculation though. Snarf is weird and hardly makes sense with the cringe shit he spews. <i>*slap*</i>
+            </div>
+            <br />
+            <hr />
+            <br />
+            <div>Whoopsie, one quick little addition. Sorry, I forgot you TheDevilHacker. You're solid and should remain on the Discord and Pmod. I know you're retired from HighSpell right now anyways and all this drama is beyond you. But, you're a trustworthy OG who should remain with Amanda, Heyder, Bunny. Cheers!</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post-inner">
+          <h2 class="post-title">Tomb's Story</h2>
+          <div class="post-content">
+            <p>Hello HighSpell,<br /><br />Check check, is this thing on?  Hi! This is Tomb speaking now. Lets start it hard and raw.  No, I was not hacked.  A lot of what I have to say will seem like I am pointing at others, No.  Trust me, I point at myself, but I wanted to get the history of the disc out before I rat myself out.  Its in here. Search: "Tomb's work"<br /><br />So, I guess I should start at the beginning of it all, I don't know the exact date, it was after the Pmods were introduced and well before the Manda incident, as I've been removed from the discord but I said something along the lines of "With all these bots in Highspell, I'd be curious to see how well I could do myself and the Highlite client".  Thinking nothing of it I just went on my way.  A few weeks later, (11/11/2025) I was talking to Ryan about some real world things and he says "Funny that you mentioned the bot thing a lil bit ago..." and sent me a screenshot of his combat bot he made.  I asked for its name so I could watch out for reports and leak them to Ryan. <br /><br />Fast forward a week or so, I can't see what he said to me anymore as he seems to have purged our DMs but I can see my side of it.  Zah asked me something in relation to data flowing through the client about other players and and sent me a script.  I asked him who made it for him and then he invited me to the Botting Discord where I disovered Elvendaele and Jared had been the whole time.  I then shared Ryan's script with him and asked if Ryan was able to join.  We stuck that way for a long while.<br /><br />Now lets talk about me, I did run a few bots, I'm not going to deny that fact.  I ran more than I can rememeber but I stayed before the max account limit because I couldn't be assed to set up a VPN or anything.  I did it mostly for the memes of it all. I started with Ryan's flax picking bots but got bored of it after a day. (ObviousFlexBot) I did buy a VPS to suicide bot my "Bronze Axe Only" account that was meant to just woodcut with a bronze axe to see how far it could go. (75 Woodcutting but I got bored) When I made the post to confront Heyder in the Highspell discord, I was telling the truth.  I just happened to login to the VPS to check on him when I saw Heyder there just starting to mess with my account.  So, I ignored him.  That was the point of the account, to be caught.  <br /><br />My other accounts, main included after awhile because I got tired of leveling up again, I pretty much only did Woodcutting on at the Wastes oaks, a long with a TON of other clearly botters. I ran 6 of these accounts and put them on my second monitor while I went about my daily work.  I watched people come and go, I talked to a few here and there but ultimately got caught.  I talked to Heyder a few times on them too as to try and reduce suspicion but Heyder sused me out.  Yes, I did bot on my main, I mostly did Enchanting as that was the most potant script we had at the time.  Zah was working on a theiving bot but it was mostly just the theive from the guard in Algham castle and meant to suicide.  After awhile, probably 2 weeks?, I got bored and shut it all down.  Stopped the Bronze axe only account and use the VPS to run other stuff for my new passion..No...Not botting LOL.<br /><br />Now lets talk about the scripts.  From what I could tell, the first script that start it all was mostly provided by Elvendaele, but I don't think it was meant to be malicious and was meant to help Zah learn how the game worked.  I know Elvendaele and Zah were working on an anti-botting script before all the botting started.  I truely believe Zah started botting purely so he could learn how to detect it.  Zah also started so he could learn programming.  I enabled Zah to do more;faster by providing him with my Claude account.<br /><br />Zah was pumping out scripts left and right, some broken, yes, but worked well enough to function if someone was checking on it every so often.  He used AI to make a super pretty Enchanting bot that had very basic path finding in it and he built it out to be able to start at level 1 and go to 100 enchanting, If provided all the materials and the user switched "modes" but it was very well built.  Jared was also asking for some other bots, mining, fishing and harvesting.  I don't really know how far these went, but I do know Jared was using the mining and I used the fishing bot.  From speaking with Zah after this whole ordeal, Zah said the harvesting bot wasn't very good and could really only do Aruba.</p>
+            <h2>Tomb's Work</h2>
+            <p>
+              Now, where does Tomb fit in to this? He seems like he is pinning everything on others.  Okay fine, lets talk about my scripts and coding. So, as I stated Ryan is who got me into it, Zah is who kept me there.  I was trying to help Zah progress as an engineer.  I found that I had a need for a scroll making bot and Elvendaele had provided one for use but it needed to be kick started and was irritating to use, so I fixed it up and made it easier to start and stop on demand.  I also provided some path finding logic to Zah for his enchanting bot so he could make the beginning levels of enchanting easier (We had to walk to the water altar a lot...) but for the most part, I didn't develop more. To be completely honest, I felt like I needed to contribute more as I was kind of just leeching off Zah (Claude) and Ryan's scripts.  So I talked to Ryan about making a bot client and he told me he was already doing it and would let me help once he got it to a better spot.  After a lot of pestering him, and him showing me progress, he finally agreed that it may be better if we started fresh but using the Highlite client.  I knew the inner works of it, I knew it pretty well.  I just had a one issue, I didn't want KKona to find out and remove the Core from NPM.  So, I forked the client and the core, and merged them back together.  I started ripping out parts of the client so I could expand its capabilities and give it to Ryan and Zah to start building plugins that could be used much easier than the injection style scripts we were using.  I never claimed I built the base client, Ryan built his from scratch and I ripped off KKona. I'm sorry Kona. I had nothing to do with the bot watch discord bot that pinged the discord when a pmod logged in.  I didn't make "hundreds of accounts" as snarf stated.  I made MAYBE 12 accounts? But only used like 7 of them.  I made lots in case I wanted to do more, but ultimately didn't.  <br /><br />Zah if you are reading this and you remember more, I will gladly update this with what I am missing.  This is genuinely what I can remember working on.  <br /><br />Now lets get to Snarflaxus.  Boy oh Boy Snarf.  You are a piece of work. First, I'd like to say Snarf, we talked nearly daily in voicechat for at least 8 hours a day for like 2 or 3 weeks straight.  I had your back against Fallen and Bootleg.  I trusted everything you said because you seemed like a truthful guy.  Clearly, I was wrong (I'll get to that in a bit or read Ryan's perspective and watch the videos).  Did you know he will spam you in DMs to get your attention, nothing horrible just your name in a pet name fashion 4 or 5 times and if you don't respond he will *slap* you and call you bad?  Nah, I'm not into that.  I ignored it a lot.  Either way, after my leak of the botter discord, Snarf came to me looking for answers.  I'll give him this, he asked the correct questions that I didn't have answers for.  Snarf sused me out so good job on that.  I stuck to my hacked story with everyone I could, but Snarf didn't fall for it.  Good job.  Zah and I made up but Snarf wasn't finished.  I went on to my next long term project and Snarf got interested in it again (Snarf was there before I was but had left for one reason or another).  After maybe a month, snarf comes at my asking questions but won't explain his reasoning for the questions.  "How involved was ryan with the clankers?" (I'm not going to rat someone out without a valid reason to do so or really at all, ask them not me.) "On an unrelated note, any thoughts on who Trade is?" (I genuinely didn't know, and if I did, I had forgotten as I didn't care anymore), I asked ryan and he told me he was Trade.  Snarf didn't like my, in his words, corporate responses.  He "loathes corporate".  I said he was demanding answers without wanting to provide a reasoning for the questions so I wasn't going to spill anything. There is a link to a video of mine and Snarfs dms below.  If you care to read it. Snarf also openly admits to lying in the annoucement about ME specifically and I confronted Zah about this and Zah willingly went and tried to get Snarf to make corrections to his post and Snarf said he wouldn't as "Its okay to lie a bit zah" "And I purposefully didn't say it was from Zah" (It's all in the video I link below)  So, Snarf wrote that himself to try and make it sound like a tell all from Zah but it was really his own twisted version of the story to try and paint others to look worse.  Its in the videos Ryan posted.  Please watch it and read it all.  Snarf isn't the guy he is trying to portray himself to be.<br /><br /><strong>👉 <a href="https://www.youtube.com/watch?v=x46F_qba4H8&amp;pp=2AYI" target="_blank" rel="noopener">https://www.youtube.com/watch?v=x46F_qba4H8</a></strong
+              ><br /><br />Now lets talk about the botter leak I did.  I'll say it again for the people in the back, <strong>I WAS NOT HACKED, I USED THAT AS A COVER UP</strong>. So, the leak started because of some things Zah said in the staff discord.  Jared was leaking them to me. In context or out of context, doesn't matter.  I got pissed off and over reacted. Shame on me.  I wanted to be out of the botting community and hindsight being 20/20 I should have just left, but I didn't.  I did the typical internet degen bullshit and framed Zah as the mastermind.  As I stated before, Zah did a lot of shit and I do believe still does do a lot of shit in relation to botting highspell. Those images and that video in circulation are 100 PERCENT real, not AI generated as Zah tries to claim.  I recorded them from the real Botting discord.  I very meticulously selected only threads I KNEW didn't have anyone but Zah talking in it.  Look at the video again, you can see me skipping threads.  The accounts in that HUGE picture, are 100 percent Zah, I don't know if they are still active but from Heyders discord message in general, they are still active to this day. Zah isn't innocent in any of this either. Everything I said about the botting discord to Devil and Bunny was also the full truth, except for the hack thing...Devil knows that truth though.  I was trying to cover my own ass and get out of there, which was a mistake.  I should have just left.  I'm not innocent in any of this either.  <br /><br />As for Ryan, Elven and Jared.  I know Ryan maybe got a bit carried away with all of it.  He sent me images of him running bots on his sons computers, messages talking about how he was going to try and run bots while his kids were at school.  I don't know the total amount of bots he was running, but I do think it was in or above the 20s at one point.  Elven, he was behind the Spidamanda event incident, the Heyder bots.  I egg'd Elven on and made the suggestion he crash the party.  In all honestly, maybe only half the bots worked the other half got stuck in Middlefern. This was just a test of the technology.  We did it to try and get Dew to do something.  The people who have been in the community long enough know the only way to really get Dew's attention is to do something extreme.  We attempted to do something extreme.  After discussing with Elven the potential uses of this huge bot farm, and that fact that Dew did literally nothing, I suggested the next step would be to lock Highspell down.  We could log in 1000 bots with the improved script and make it so no one could play highspell until Dew did something.  Actually one thing we noticed about this bot farm, if the accounts never log in to the game properly (Interrupt the chat server connection before its established), they can't be captcha'd, banned or muted.  So have fun with that people who bot and made it this far! Headless bots are the future of highspell botting! We discussed ways of getting all 1000 bots registered in a fashion that would make it rollback resistant as well.  Basically, spacing out the registerations over the course of a few weeks or even months.  If Dew wanted to truely fix it, he would need to manually delete all the accounts or roll back weeks of progress.  It wasn't to be malicious, yes it was malicious, but the point was to get Dews attention to give the Highspell community the attention it deserved.  Lastly, Jared - I honestly don't know much about what Jared did.  We talked a bit, he told me his botting antics but never got a full representation of what he was actually running at once.  Yeah, he had probably 30(?) accounts registered but I am fairly certain he only ran 6 at a time since he, like me, didn't care to use multiple if any VPNs.  I don't have a list of all those accounts as it wasn't in my initial leak and that discord has been purged, or so I'm told.<br /><br />As for the Doxxing of Bunnygirl, I do not know who did it, I've heard it was who it might be but that could just be a misunderstanding of a comment they made.  Since I can't say for certain who it was I am purposfully omitting the name of who I've heard as I don't want people to think I am blaming them.<br /><br />Okay wow.  So that was a lot.  I'm sure I've missed a lot, but it paints a broad picture of the whole situation from my perspective.  If any of you made it this fair, congratulations. For the third time, I think?, I'd like to say.  I am not innocent in any of this, I made mistakes, I said and did things I probably should know better, but I'm not the only one.  No one in this group is innocent.  We all did things and bounced ideas off eachother constantly.  Some of us did more than others, some of us were just there along for the ride.  If I think of more, I will see if we can get this updated but I doubt it as we've all stopped caring at this point.
+            </p>
+          </div>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post-inner">
+          <h2 class="post-title">Elvendaele's Story</h2>
+          <div class="post-content">
+            <div>My involvement began on September 16th, when Zah reached out to me to discuss the automation aspects of a verification system he was considering adding to the Discord bot. I walked him through the basics of packet structure and event interception, and we also talked more generally about bot detection possibilities. Given how much information is visible from other players’ actions, it seemed worthwhile to explore whether botting behavior could be identified externally. At the time, botting was already fairly noticeable, so it was a relevant topic.</div>
+<br>
+<div>To better understand both perspectives, I created a simple bot for the first two agility courses and a basic combat script that killed chickens and collected feathers. The goal was to observe exactly which packets were sent and received, and then compare that with what could be seen from another client’s point of view to evaluate whether meaningful detection was possible.</div>
+<br>
+<div>As a fun experiment, I expanded the combat script using ChatGPT to build a small UI for dynamic target selection. It allowed enumeration of nearby NPCs, showed potential drops, and let you choose which items to pick up. This sparked Zah’s interest in the technical side of botting as well, and he began experimenting with different scripts as a learning exercise, also with the help of GPT.</div>
+<br>
+<div>Over time, bot detection became less of a focus, and for a while we mostly treated it as a technical curiosity—watching the “digital aquarium,” so to speak. There was no intent to gain profit or compete on leaderboards; it was largely exploratory and for fun.</div>
+<br>
+<div>Fast forward, Jared joined us and booted up some bots, followed by Tomb and Ryan. </div>
+<br>
+<div>When player moderators were given temporary bans, I paused my own bots to see whether the situation would improve. Unfortunately, their tools were limited, and many issues persisted. I then wrote a headless client that could run scripts without visuals, mainly to see how far they could push before getting banned. I ran scripts at Quad Oaks on Elvendaele 2/3 and Yea, and another account.</div>
+<br>
+<div>We added a Discord notification feature to alert us when a player moderator or alt logged in, which was useful for observing moderator activity patterns. Heyder covered a significant portion of that monitoring on most days.</div>
+<br>
+<div>At one point, there were discussions about whether increased visibility would encourage stronger action on botting overall. This culminated in the Heyder bots appearing during Manda’s event, primarily because it required minimal setup and was likely to be noticed by Dew. Heyder was particularly motivated to see botting addressed, and this was seen as a way to draw attention to the issue.</div>
+<br>
+<div>In hindsight, we overestimated how much impact this would have. The end result was the introduction of two-day ban powers for pmods. A notification system was later adapted so moderators could be alerted when banned bots logged back in, but the volume became difficult to manage.</div>
+<br>
+<div>I haven’t been very active since early December, as we moved on to another game where the developers are more engaged and proactive about addressing issues as they arise.</div>
+          </div>
+        </div>
+      </article>
+
+      <article class="post">
+        <div class="post-inner">
+          <h2 class="post-title">Jared's Story</h2>
+          <div class="post-content">
+            <div>Hi, this is Jared.</div>
+<br>
+<div>I want to take the time to clearly state that everything Ryan, Elven, and Tomb said is true. Prior to everything escalating, Zah initially approached me while pretending to be an “informant.” He showed me scripts and acted as if he was exposing someone else. When he later admitted that he was actually the one behind them, my curiosity got the better of me and he invited me into his Discord server. Inside that server were private channels dedicated entirely to scripts. Not long after, he went on to create a separate Discord specifically for those activities.</div>
+<br>
+<div>Following that, Zah pressured me into purchasing a Claude AI account and allowing him to use it, which I ultimately agreed to. I regret my involvement in this situation.</div>
+<br>
+<div>When I left in December — around the time Zah was exposed — I told Bunny everything. At that point, Zah was heavily pressuring me to lie and make false statements in order to protect himself from consequences related to his bot server. I felt intimidated and genuinely believed he would attempt to expose me if I didn’t comply. I also believe his goal was to remain an inside presence within admin communications so he could continue acting maliciously in-game.</div>
+<br>
+<div>Conveniently for both Snarf and Zah, Bunny was later doxxed and bullied off the Discord. What happened to her was absolutely disgusting, and anyone involved in that behavior should face serious consequences. That situation alone speaks volumes about the environment that has been allowed to exist.</div>
+<br>
+<div>Many of the rumors being spread about me are wildly exaggerated or completely false, including claims that I was the leader of this entire situation or that I was responsible for the worst in-game behavior. None of that is true.</div>
+<br>
+<div>Yes, I did use scripts — and I feel genuine guilt for doing so. However, I did not create them, I do not know how to make them, and I never sold botted goods in-game. When I left, I abandoned those accounts entirely.</div>
+<br>
+<div>Zah and others in his group have repeatedly attempted to portray Heyder as unstable throughout all of this. From my perspective, Heyder is genuinely doing his best work and has been severely hindered by the constant interference and misinformation coming from that group.</div>
+<br>
+<div>I do believe Dew needs to grant PMods proper moderation tools, including permanent ban abilities — 100%. At the same time, the Discord itself clearly needs attention and cleanup, especially considering the amount of misinformation that has been allowed to circulate about me over the past several days.</div>
+<br>
+<div>My intention was simply to return and start fresh on a new Highspell account, similar to what Elven previously did. I rejoined the Highspell Discord on 1/15/26. On 1/18/26, I was muted by Snarf before I had said anything at all, around the same time he made his inaccurate Discord announcement. What made this especially concerning was that Zah was still allowed to speak and interact freely within the community afterward.</div>
+<br>
+<div>That situation raises serious questions. I’ll leave it to the community to draw their own conclusions.</div>
+<br>
+<div>Zah was not a minor participant in any of this. He was deeply involved and obsessively focused on script creation — to the point that even Tomb expressed concern, and I shared those concerns as well.</div>
+<br>
+<div>Snarf, I believe you are compromised. I saw screenshots of you encouraging Zah within his private Discord group to lie and embellish details of this situation. Given your ongoing private communication with him, this represents a clear conflict of interest. For that reason, I believe both you and Zah should be removed from the Highspell Discord.</div>
+<br>
+<div>The same concern applies to Oni. While I don’t know enough to make a definitive judgment, the situation appears to present a conflict of interest. If that is the case, stepping down would be the appropriate course of action.</div>
+<br>
+<div>If anyone has additional questions, you’re welcome to contact me directly on Discord. I have been genuine throughout this entire situation aside from my admitted mistakes. I have nothing to gain from any of this — but I will not allow myself to be slandered without speaking up.</div>
+<Br><hr><br><div>Here is Jared's evidence dump, showing how it all started for him:</div>
+<ul>
+    <li><a href="embed/drama/jared/1.png" target="_blank" rel="noopener">Photo #1</a></li>
+    <li><a href="embed/drama/jared/2.png" target="_blank" rel="noopener">Photo #2</a></li>
+    <li><a href="embed/drama/jared/3.png" target="_blank" rel="noopener">Photo #3</a></li>
+    <li><a href="embed/drama/jared/4.png" target="_blank" rel="noopener">Photo #4</a></li>
+    <li><a href="embed/drama/jared/6.png" target="_blank" rel="noopener">Photo #5</a></li>
+    <li><a href="embed/drama/jared/7.png" target="_blank" rel="noopener">Photo #6</a></li>
+    <li><a href="embed/drama/jared/9.png" target="_blank" rel="noopener">Photo #7</a></li>
+    <li><a href="embed/drama/jared/10.png" target="_blank" rel="noopener">Photo #8</a></li>
+    <li><a href="embed/drama/jared/11.png" target="_blank" rel="noopener">Photo #9</a></li>
+    <li><a href="embed/drama/jared/13.png" target="_blank" rel="noopener">Photo #10</a></li>
+    <li><a href="embed/drama/jared/14.png" target="_blank" rel="noopener">Photo #11</a></li>
+    <li><a href="embed/drama/jared/15.png" target="_blank" rel="noopener">Photo #12</a></li>
+    <li><a href="embed/drama/jared/16.png" target="_blank" rel="noopener">Photo #13</a></li>
+    <li><a href="embed/drama/jared/17.png" target="_blank" rel="noopener">Photo #14</a></li>
+    <li><a href="embed/drama/jared/18.png" target="_blank" rel="noopener">Photo #15</a></li>
+    <li><a href="embed/drama/jared/19.png" target="_blank" rel="noopener">Photo #16</a></li>
+    <li><a href="embed/drama/jared/20.png" target="_blank" rel="noopener">Photo #17</a></li>
+    <li><a href="embed/drama/jared/21.png" target="_blank" rel="noopener">Photo #18</a></li>
+              </ul>
+          </div>
+        </div>
+      </article>
+    </main>
+  </body>
+
+<!-- Mirrored from highspell.wiki/w/File:Oak_scroll.png by HTTrack Website Copier/3.x [XR&CO'2014], Wed, 21 Jan 2026 09:31:43 GMT -->
+</html>
+
